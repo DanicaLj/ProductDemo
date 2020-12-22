@@ -18,11 +18,11 @@
         <table class="table table-striped">
             <thead>
                 <tr>
-                    <td>Comment</td>
-                    <td>Name</td>
-                    <td>Email</td>
-                    <td>isApproved</td>
-                    <td>Approve/Disapprove</td>
+                    <th>Comment</th>
+                    <th>Name</th>
+                    <th>Email</th>
+                    <th>isApproved</th>
+                    <th>Approve/Disapprove</th>
                 </tr>
             </thead>
             <tbody>
@@ -33,8 +33,8 @@
                         <td><?= $comment['email']?></td>
                         <td><?= $comment['isApproved']?></td>
                         <td>
-                            <button class="approve" data-comment-id="<?=$comment['idcomments']?>">Approve</button>
-                            <button class="disapprove" data-comment-id="<?=$comment['idcomments']?>">Disapprove</button>
+                            <button class="approve btn btn-success" data-comment-id="<?=$comment['idComment']?>">Approve</button>
+                            <button class="disapprove btn btn-dark" data-comment-id="<?=$comment['idComment']?>">Disapprove</button>
                         </td>
                     </tr>
                 <?php endforeach?>

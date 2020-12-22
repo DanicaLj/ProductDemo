@@ -1,3 +1,6 @@
+body{
+    padding: 0 50px;
+}
 .product-wrapper{
     border: 1px solid blue;
     border-radius: 10px;
@@ -5,4 +8,15 @@
 .success{
     display: none;
     color:green;
+}
+.form-wrapper{
+    width: 50%;
+}
+.comments .comment-name{
+    font-size: 20px;
+    margin: 0;
+    color: lightblue;
+}
+.comments span{
+    color: gray;
 }

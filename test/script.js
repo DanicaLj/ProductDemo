@@ -10,8 +10,10 @@ $(document).ready(function(){
             type:"POST",
             data: {name:name, email:email, comment:comment},
             success: function(){
-                
                 $(".success").css("display", "block");
+                $("[name='name']").val("");
+                $("[name='email']").val("");
+                $("[name='comment']").val("");
             }
         });
         
