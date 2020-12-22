@@ -1,0 +1,8 @@
+.product-wrapper{
+    border: 1px solid blue;
+    border-radius: 10px;
+}
+.success{
+    display: none;
+    color:green;
+}
