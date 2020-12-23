@@ -8,6 +8,8 @@ body{
 .success{
     display: none;
     color:green;
+    background: lightgreen;
+    padding: 10px;
 }
 .form-wrapper{
     width: 50%;
@@ -19,4 +21,11 @@ body{
 }
 .comments span{
     color: gray;
+}
+.name-validation,.email-validation,.comment-validation{
+    display: none;
+    color:red;
+}
+#logout{
+    float: right;
 }

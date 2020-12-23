@@ -25,13 +25,14 @@
                 <div class="product-wrapper col-lg-4 col-md-4 col-sm-4">
                     <p>Title: <?= $product['title']?></p>
                     <p>Description: <?= $product['description']?></p>
-                    <p>ShortDescription: <?= $product['shortDescription']?></p>
+                    <p>Short Description: <?= $product['shortDescription']?></p>
                     <img src="data:image/jpeg;base64,<?php echo base64_encode($product['image']); ?>" width="100" />
                 </div>
             <?php endforeach;?>
         </div>
 
         <div class="comments">
+            <h3>Comments:</h3>
             <?php foreach($comments as $comment):?> 
                 <p class="comment-name">By: <?= $comment['name']?></p>
                 <span><?= $comment['email']?></span>
@@ -45,11 +46,11 @@
             <p class="success">Comment added successfuly!</p>
             <form id="comment-form">
                 <label>Name:</label></br>
-                <input type="text" name="name" placeholder="Name" class="form-control"></br>
+                <input type="text" name="name" placeholder="Name" class="form-control"><span class="name-validation">This field is required!</span></br>
                 <label>Email:</label></br>
-                <input type="email" name="email" placeholder="Email" class="form-control"></br>
+                <input type="email" name="email" placeholder="Email" class="form-control"><span class="email-validation">This field is required!</span></br>
                 <label>Comment:</label></br>
-                <textarea rows="3" name="comment" placeholder="Comment" class="form-control"></textarea></br>
+                <textarea rows="3" name="comment" placeholder="Comment" class="form-control"></textarea><span class="comment-validation">This field is required!</span></br>
                 <input class="btn btn-success" type="submit" value="Submit!" id="submit">
             </form> 
         </div>
