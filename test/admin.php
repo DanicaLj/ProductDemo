@@ -53,6 +53,7 @@
                 <input class="btn btn-success" type="submit" value="Submit!" id="login">
             </form>
             <p>You are not logged in as admin!</p>
+            <button onclick="location.href ='http://127.0.0.1/productDemo/test/index.php'">Redirect</button>
         <?php endif;?>
     </body>
 </html>
